@@ -1,0 +1,62 @@
+.main-container {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap:10px 10px;
+
+}
+
+.child-container {
+  height: 50px;
+  width: 80px;
+  background-color: aqua;
+  text-align: center;
+}
+
+aside {
+  border: 2px black solid;
+}
+
+.aside-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:4px
+}
+
+
+#child-container-2 {
+  order:5;
+  flex-shrink: 4
+  /* align-self: flex-end; */
+  /* background-color: rgb(28, 56, 56); */
+
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  background: lightgray; /* Just to visualize the container */
+  padding: 10px;
+}
+
+.flex-item {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+
+.flex-item {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+
+/* Specific flex-basis values for each item */
+.flex-item:nth-child(1) { background: tomato; flex-basis: 100px; }
+.flex-item:nth-child(2) { background: dodgerblue; flex-basis: 200px; }
+.flex-item:nth-child(3) { background: mediumseagreen; flex-basis: 50%; }
